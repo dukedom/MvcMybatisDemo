@@ -77,10 +77,11 @@
     <include refid="Base_Column_List" />       distinct
 
     from userinfo
-  </if>
+
     <if test="_parameter != null">
     <if test="orderByClause != null">
       order by ${orderByClause}
+    </if>
     </if>
   </select>
   <delete id="deleteByExample" parameterType="com.zufang912.entity.UserinfoExample">
